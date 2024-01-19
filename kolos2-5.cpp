@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 int main(){
     int n;
     int m;
@@ -41,7 +39,7 @@ int main(){
         for (int i = 0; i < m*2; i+=2) {
             temp = arr2d[j][i];
             temp2 = arr2d[j][i + 1];
-            if (temp > temp2) {
+            if (temp < temp2) {
                 temp3 = (float) (temp + (temp2 * 0.1));
                 arr2d2[j][it] = temp3;
             } else {
